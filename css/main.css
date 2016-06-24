@@ -2,7 +2,7 @@
 /*Fontfaces added*/
 @font-face {
     font-family: 'montserrat-reg';
-    src: url("../../assets/fonts/montserrat/Montserrat-Regular.otf") format('opentype');
+    src: url("../fonts/montserrat/Montserrat-Regular.otf") format('opentype');
 }
 
 h1 {
