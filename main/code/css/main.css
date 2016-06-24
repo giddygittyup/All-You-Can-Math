@@ -1,5 +1,13 @@
+
+/*Fontfaces added*/
+@font-face {
+    font-family: 'montserrat-reg';
+    src: url("../assets/fonts/montserrat/Montserrat-Regular.otf") format('opentype');
+}
+
 h1 {
-  color: #bbbbbb;
+  color: blue;
+  font-family: montserrat-reg;
 }
 
 body {
