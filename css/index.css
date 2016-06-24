@@ -1,4 +1,66 @@
+/*
+This is the .css file for index.html and it can be found at the top level
+
+===GENERAL STYLES===
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 250%;
+  font-family: montserrat-reg, arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/*
+===Dropdown Menu===
+*/
+menu {
+  height: 6vh;
+}
+
+/*
+===Header and hero section styles===
+*/
 header {
-  background-image: url(../images/main/hero.png);
-  font-style: italic;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/main/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 94vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  border-radius: 150px;
+  border: 3px solid rgb(26,117,187);
+  padding: 7px;
+  margin-top: 10px;
+}
+
+.btn-full {
+  background-color: rgb(26, 117, 187);
+}
+
+.btn-ghost {
+  border: 3px solid rgb(26,117,187);
 }
