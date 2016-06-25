@@ -21,22 +21,24 @@ h1 {
 }
 
 /*
-===Dropdown Menu===
-*/
-menu {
-  height: 6vh;
-}
-
-/*
 ===Header and hero section styles===
 */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/main/hero.jpg);
   background-size: cover;
   background-position: center;
-  height: 94vh;
+  height: 100vh;
 }
 
+/*
+not needed at the moment
+.logo-round {
+  width:100px;
+  height:100px;
+  border-radius:150px;
+  margin: 10px 0px 0px 10px;
+}
+*/
 .hero-text-box {
   position: absolute;
   top: 50%;
@@ -45,22 +47,48 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.btn {
+
+/*
+Buttons on the hero image header
+*/
+.btn:link,
+.btn:visited {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
   color: white;
-  border-radius: 150px;
-  border: 3px solid rgb(26,117,187);
-  padding: 7px;
-  margin-top: 10px;
+  border-radius: 200px;
+  border: 3px solid #1A75BB;
+  margin: 20px 20px 0px 0px;
 }
 
-.btn-full {
-  background-color: rgb(26, 117, 187);
+.btn:hover,
+.btn:active {
+  background-color: #14598e;
+  border-color: #14598e;
 }
 
-.btn-ghost {
-  border: 3px solid rgb(26,117,187);
+.btn-full:link,
+.btn-full:visited {
+  background-color: #1A75BB;
+  margin-right: 20px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #14598e;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+
+}
+
+
+/*
+===Dropdown Menu===
+*/
+menu {
+  height: 60px;
 }
