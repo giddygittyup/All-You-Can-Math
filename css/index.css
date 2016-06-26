@@ -10,15 +10,6 @@ This is the .css file for index.html and it can be found at the top level
   font-size: 20px;
 }
 
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 250%;
-  font-family: montserrat-reg, arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 4px;
-}
 
 /*
 ===Header and hero section styles===
@@ -28,7 +19,19 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+    min-height: 500px;
 }
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 250%;
+  font-family: montserrat-light, montserrat-reg, arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
 
 /*
 not needed at the moment
@@ -39,6 +42,7 @@ not needed at the moment
   margin: 10px 0px 0px 10px;
 }
 */
+
 .hero-text-box {
   position: absolute;
   top: 50%;
@@ -61,6 +65,7 @@ Buttons on the hero image header
   border-radius: 200px;
   border: 3px solid #1A75BB;
   margin: 20px 20px 0px 0px;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .btn:hover,
@@ -82,13 +87,39 @@ Buttons on the hero image header
 
 .btn-ghost:link,
 .btn-ghost:visited {
-
+    border-color: #14598e;
 }
 
 
 /*
 ===Dropdown Menu===
 */
-menu {
-  height: 60px;
+.main-nav {
+    float: left;
+    list-style: none;
+    padding:  30px 0 30px 0;
+    width: 100%;
+    color: black;
+    background-color: #5d5d5d;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0px 40px 0px 40px;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s, ;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    border-bottom: 2px solid rgba(86, 182, 72, 0.82);
 }
